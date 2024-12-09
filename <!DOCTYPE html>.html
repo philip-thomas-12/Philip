@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  
+
+  <style>
+    /* Background color for the page */
+    body {
+      background-color: lightgrey;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Styling for form labels */
+    label {
+      color: darkblue;
+      font-size: 24pt;
+    }
+    
+    
+  </style>
+  
+
+</head>
+<body>
+
+  <h2>Survey Form</h2>
+
+  <form action="register.jsp" method="post">
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label for="mobile">Mobile:</label><br>
+    <input type="text" id="mobile" name="mobile" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="house_name">House Name:</label><br>
+    <input type="text" id="house_name" name="house_name" required><br><br>
+
+    <label for="state">State:</label><br>
+    <input type="text" id="state" name="state" required><br><br>
+
+    <label for="hobbies">Hobbies:</label><br>
+    <input type="text" id="hobbies" name="hobbies" required><br><br>
+
+    <label for="feedback">Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="4" cols="30" required></textarea><br><br>
+
+    <input type="submit" value="Register">
+
+  </form>
+
+</body>
+</html>
