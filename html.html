@@ -10,7 +10,13 @@ body{
 h1{
     color:black;
 }
-
+table{
+    background-color:mediumpurple;
+}
+dl{
+    color:blue;
+    background: #000;
+}
 
 div {
   width: 100px;
@@ -43,20 +49,31 @@ div {
     <li>
         children
     </li>
-   </ol> 
+   </ol>
+   <dl>
+    <dt>the dt</dt>
+    <dd>the discrition</dd>
+   </dl> 
    <table border="1">
     <tr><th>name</th><th>marks</th></tr>
     <tr><td>phy</td><td>15</td></tr>
     <tr><td>chem</td><td>20</td></tr>
    </table>
    <table border="5">
-    <tr><th>name</th><th>marks</th></tr>
-    <tr><td>phy</td><td>15</td></tr>
+    <tr><th>name</th><th>marks</th><th>marks</th></tr>
+    <tr><td>phy</td><td>15</td><th>45</th></tr>
     <tr><td>chem</td><td>20</td></tr>
    </table>
    <form action="/submit" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name">
+    <label for="password">password</label>
+    <input type="password" id=password name="password">
+    <label for="gender"></label>
+
+    <select id="gender" name="gender">Gender
+        <option value="male">Male</option>
+        <option value="female">female</option>    </select>
     <input type="submit" value="Submit">
   </form>
   
