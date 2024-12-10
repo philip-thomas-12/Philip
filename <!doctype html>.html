@@ -1,22 +1,55 @@
-<!doctype html>
-<html>
-    <head>
-        <style>
-        body {
-         background-color:black;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: center;
         }
-        form{
-            background-color :white;
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
         }
-</style>
+        th {
+            background-color: lightgrey;
+        }
+        td {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <form action="submit"method="post">
-        <label for="name">name:</label>
-<input type="text"id="name"name="name"required>
-        <label for="pasword">PPPPP:</label>
-        <input type="text"id="password"name="password"required>
-<label for="name">name:</label>
-<input type="text"id="name"name="name"required>
-    </form>
+    <table>
+        <tr>
+            <th><em>Student Name</em></th>
+            <th><em>Fruit</em></th>
+            <th><em>Color</em></th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>Apple</td>
+            <td>Blue</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>Orange</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>David</td>
+            <td></td>
+            <td>Green</td>
+        </tr>
+        <tr>
+            <td>Elma</td>
+            <td>Grapes</td>
+            <td>Red</td>
+        </tr>
+    </table>
 </body>
+</html>
