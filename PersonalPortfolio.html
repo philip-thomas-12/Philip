@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #24292e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    .about, .projects, .contact {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .project-card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      background: #24292e;
+      color: white;
+      padding: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    form button {
+      background: #24292e;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hi, I'm Philip Thomas</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer learning HTML, CSS, and JavaScript. I enjoy building creative websites and learning new technologies.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Project One</h3>
+      <p>A simple calculator using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Project Two</h3>
+      <p>A responsive photo gallery layout using Flexbox and media queries.</p>
+    </div>
+
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PHILIP THOMAS. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
